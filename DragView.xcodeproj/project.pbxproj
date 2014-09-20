@@ -21,6 +21,9 @@
 		AEBAB74A19C91B6000DD9B72 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEBAB72C19C91B6000DD9B72 /* UIKit.framework */; };
 		AEBAB75219C91B6000DD9B72 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AEBAB75019C91B6000DD9B72 /* InfoPlist.strings */; };
 		AEBAB75419C91B6000DD9B72 /* DragViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AEBAB75319C91B6000DD9B72 /* DragViewTests.m */; };
+		AEBAB75F19C91B6E00DD9B72 /* DragViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEBAB75E19C91B6E00DD9B72 /* DragViewController.m */; };
+		AEBAB76219C91B7B00DD9B72 /* CVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AEBAB76119C91B7B00DD9B72 /* CVCell.m */; };
+		AEBAB76619C91BA100DD9B72 /* DragView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEBAB76519C91BA100DD9B72 /* DragView.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,12 @@
 		AEBAB74F19C91B6000DD9B72 /* DragViewTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DragViewTests-Info.plist"; sourceTree = "<group>"; };
 		AEBAB75119C91B6000DD9B72 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		AEBAB75319C91B6000DD9B72 /* DragViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DragViewTests.m; sourceTree = "<group>"; };
+		AEBAB75D19C91B6E00DD9B72 /* DragViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DragViewController.h; sourceTree = "<group>"; };
+		AEBAB75E19C91B6E00DD9B72 /* DragViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DragViewController.m; sourceTree = "<group>"; };
+		AEBAB76019C91B7B00DD9B72 /* CVCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVCell.h; sourceTree = "<group>"; };
+		AEBAB76119C91B7B00DD9B72 /* CVCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CVCell.m; sourceTree = "<group>"; };
+		AEBAB76519C91BA100DD9B72 /* DragView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DragView.storyboard; sourceTree = "<group>"; };
+		AEBAB76819C9238800DD9B72 /* DragViewCellProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DragViewCellProtocol.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +126,12 @@
 				AEBAB73A19C91B6000DD9B72 /* Main.storyboard */,
 				AEBAB73D19C91B6000DD9B72 /* ViewController.h */,
 				AEBAB73E19C91B6000DD9B72 /* ViewController.m */,
+				AEBAB75D19C91B6E00DD9B72 /* DragViewController.h */,
+				AEBAB75E19C91B6E00DD9B72 /* DragViewController.m */,
+				AEBAB76519C91BA100DD9B72 /* DragView.storyboard */,
+				AEBAB76819C9238800DD9B72 /* DragViewCellProtocol.h */,
+				AEBAB76019C91B7B00DD9B72 /* CVCell.h */,
+				AEBAB76119C91B7B00DD9B72 /* CVCell.m */,
 				AEBAB74019C91B6000DD9B72 /* Images.xcassets */,
 				AEBAB72F19C91B6000DD9B72 /* Supporting Files */,
 			);
@@ -231,6 +246,7 @@
 				AEBAB74119C91B6000DD9B72 /* Images.xcassets in Resources */,
 				AEBAB73319C91B6000DD9B72 /* InfoPlist.strings in Resources */,
 				AEBAB73C19C91B6000DD9B72 /* Main.storyboard in Resources */,
+				AEBAB76619C91BA100DD9B72 /* DragView.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,8 +265,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEBAB75F19C91B6E00DD9B72 /* DragViewController.m in Sources */,
 				AEBAB73F19C91B6000DD9B72 /* ViewController.m in Sources */,
 				AEBAB73919C91B6000DD9B72 /* AppDelegate.m in Sources */,
+				AEBAB76219C91B7B00DD9B72 /* CVCell.m in Sources */,
 				AEBAB73519C91B6000DD9B72 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

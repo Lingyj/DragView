@@ -7,9 +7,13 @@
 //
 
 #import "ViewController.h"
+#import "DragViewController.h"
+#import <MapKit/MapKit.h>
 
-@interface ViewController ()
-
+@interface ViewController ()<DragViewDatasource,DragViewDelegate>
+{
+    DragViewController *dragVC;
+}
 @end
 
 @implementation ViewController
@@ -18,6 +22,9 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    dragVC = [[UIStoryboard storyboardWithName:@"DragView" bundle:nil] instantiateViewControllerWithIdentifier:@"DragViewController"];
+    [self.view addSubview:dragVC.view];
 }
 
 - (void)didReceiveMemoryWarning

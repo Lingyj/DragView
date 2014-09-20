@@ -12,6 +12,19 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    NSMutableArray *ary = [[NSMutableArray alloc] init];
+    
+    @try {
+        NSString *str = [ary objectAtIndex:10];
+        [str length];
+    }
+    @catch (NSException *exception) {
+        NSLog(@"-- %@",exception);
+    }
+    @finally {
+        
+    }
+    
     // Override point for customization after application launch.
     return YES;
 }
